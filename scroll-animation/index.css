@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    min-height: 100vh;
+    background-color: cornsilk;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    padding: 3rem 3rem 13rem 3rem;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: cornflowerblue;
+    padding: 4rem 7rem;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+
+    transform: translateX(0);
+    transition: all 0.1s ease-in-out;
+}
+
+.box.left {
+    transform: translateX(-200%);
+}
+
+.box.right {
+    transform: translateX(200%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box--text {
+    color: white;
+}
