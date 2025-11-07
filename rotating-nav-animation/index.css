@@ -1,0 +1,134 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: medium;
+    margin: 0;
+    background-color: brown;
+}
+
+#background {
+    transition: 0.5s ease-in-out;
+    transform-origin: top left;
+}
+
+.circle {
+    background-color: hotpink;
+    border-radius: 100%;
+    
+    position: absolute;
+    top: -5rem;
+    left: -5rem;
+
+    width: 12rem;
+    height: 12rem;
+    transition: 0.5s ease-in-out;
+}
+
+.show-nav .circle {
+    transform: rotate(-70deg);
+}
+
+.circle button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+}
+
+.circle button i {
+    font-size: 2rem;
+}
+
+.circle .menu {
+    left: 60%;
+}
+
+.circle .close {
+    left: 20%;
+}
+
+.show-nav {
+    transform: rotate(-20deg);
+}
+
+#content {
+    width: 100vw;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+article {
+    max-width: 70%;
+    margin: 4rem 0;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-weight: 400;
+    font-style: italic;
+    color: gray;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+
+}
+
+.nav {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 0.3s;
+    transition: 1s ease;
+}
+
+.nav a i {
+    margin-right: 0.5rem;
+}
+
+.nav a + a {
+    margin-left: 20px;
+}
+
+.nav a + a + a {
+    margin-left: 40px;
+}
+
+.show-nav + .nav a {
+    color: white;
+}
